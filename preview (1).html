@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+
+body{
+    background:black;
+    color:white;
+    font-family:"Times New Roman", serif;
+    text-align:center;
+    margin-top:140px;
+}
+
+/* mortis cím */
+h1{
+    font-size:17px;
+    font-style:italic;
+    font-weight:normal;
+    margin-bottom:90px;
+}
+
+/* password szöveg */
+p{
+    font-size:16px;
+    font-size:italic;
+
+  
+}
+
+/* jelszó mező */
+input{
+    background:white;
+    color:black;
+    border:none;
+    padding:6px;
+    font-size:14px;
+}
+
+/* gomb */
+button{
+    background:black;
+    color:white;
+    border:1px solid white;
+    padding:6px 10px;
+    font-size:14px;
+    margin-left:5px;
+}
+
+/* hiba */
+#error{
+    color:red;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>mortis</h1>
+
+<p>Password:</p>
+
+<input type="text" id="pw">
+<button onclick="check()">Enter</button>
+
+<p id="error"></p>
+
+<script>
+
+function check(){
+document.getElementById("error").innerText="Incorrect password.";
+}
+
+</script>
+
+</body>
+</html>
